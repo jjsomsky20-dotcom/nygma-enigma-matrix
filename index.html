@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nygma Enigma Matrix</title>
-    <!-- Favicon link -->
-    <link rel="icon" href="https://raw.githubusercontent.com/jjsomsky20-dotcom/nygma-enigma-matrix/main/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <title>Nygma Enigma Matrix | Competitive League</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --riddler-green: #00ff00;
+            --riddler-purple: #8a2be2;
+            --rl-blue: #00aaff;
+            --bg-dark: #050505;
+        }
         body {
-            background-color: #0a0a0a;
-            color: #00ff00;
+            background-color: var(--bg-dark);
+            color: var(--riddler-green);
             font-family: 'Courier Prime', monospace;
             display: flex;
             flex-direction: column;
@@ -18,43 +22,63 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            border-top: 10px solid var(--riddler-purple);
         }
         .container {
-            border: 2px solid #00ff00;
+            border: 2px solid var(--riddler-green);
             padding: 40px;
-            max-width: 600px;
+            max-width: 650px;
             text-align: center;
-            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+            background: linear-gradient(180deg, #111, #000);
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--riddler-purple);
+            text-shadow: 0 0 10px var(--riddler-green);
+            letter-spacing: 2px;
         }
         .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            border: 2px solid #00ff00;
-            color: #00ff00;
+            margin-top: 25px;
+            padding: 15px 35px;
+            border: 2px solid var(--riddler-green);
+            color: var(--riddler-green);
             text-decoration: none;
-            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
         }
         .btn:hover {
-            background-color: #00ff00;
-            color: #0a0a0a;
-            box-shadow: 0 0 20px #00ff00;
+            background-color: var(--riddler-purple);
+            border-color: var(--riddler-purple);
+            color: white;
+            box-shadow: 0 0 25px var(--riddler-purple);
         }
         footer {
-            margin-top: 40px;
-            font-size: 0.8em;
-            color: #336633;
+            margin-top: 50px;
+            font-size: 0.75em;
+            color: #555;
         }
+        footer a {
+            color: var(--riddler-green);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>NYGMA ENIGMA MATRIX</h1>
-        <p>Elevate your competitive scene with Nygma Enigma Matrix, the premier Discord bot designed for seamless tournament management.</p>
-        <a href="https://discord.com/oauth2/authorize?client_id=1487490220558389299&permissions=8&integration_type=0&scope=bot" class="btn">INVITE TO SERVER</a>
+        <p>Riddle me this: Can your tournament survive the arena? Nygma Enigma Matrix brings professional-grade Rocket League tournament logistics to your Discord server.</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=1487490220558389299&permissions=8&integration_type=0&scope=bot" class="btn">INVITE TO THE ARENA</a>
     </div>
     <footer>
-        <p>&copy; 2026 Nygma Enigma Matrix | <a href="#" style="color: #336633;">Privacy Policy</a></p>
+        <a href="/privacy-policy">Privacy Policy</a> | 
+        <a href="/terms-of-service">Terms of Service</a> | 
+        <a href="/support">Support</a>
+        <p>&copy; 2026 Nygma Enigma Matrix | Built for Competitive Excellence</p>
     </footer>
 </body>
 </html>
